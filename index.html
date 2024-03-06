@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein</title>
+   <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+</head>
+<body>   
+    <header class="navbar">       
+        <nav>
+            <a href="#" onclick="scrollToSection('about')">About</a>
+            <a href="#" onclick="scrollToSection('papers')">Papers</a>
+            <a href="#" onclick="scrollToSection('books')">Books</a>
+            <a href="#" onclick="scrollToSection('hobbies')">Hobbies</a>
+            <a href="#" onclick="scrollToSection('collectionOfImages')">Images</a>
+            <a href="#" onclick="scrollToSection('blog')">Blog</a>
+        </nav>
+    </header>   
+    <section id="main">
+    <main> 
+        <div>
+            <p class="center-text">
+                <h1>Hello, I'm</h1>
+                <h1>Albert Einstein</h1>
+            </p>
+        </div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTu1zNk0V3VHyb5fYtahLR9nT3EdI8gwgbCYUpz7gLHQPvJt8IktP-tvfmNJ60osVA0OY&usqp=CAU" alt="Einstein image" class="profile-img" /></div>
+        <div> 
+            <p class="center-text">
+                <h1>Theoretical physicist</h1>
+            </p>
+        </div>
+    </main> 
+   </section> 
+    <section id="about">
+        <h3>About Me</h3>
+        <div>            
+            <p style="text-align: justify;">"I was born on March 14, 1879, in the town of Ulm, in what was then the Kingdom 
+                of Württemberg in the German Empire. From a young age, I was curious about the natural world around me, 
+                and this curiosity eventually led me to pursue a career in physics.Throughout my life, I have been fascinated by the mysteries of the universe. I am perhaps best known for my theory 
+                of relativity, which fundamentally changed our understanding of space, time, and gravity. This theory, expressed in 
+                my famous equation <b>E = mc2</b>, shows the deep connection between energy and mass.I was fortunate enough to receive the Nobel Prize in Physics in 1921 for my explanation of the photoelectric effect.
+                But my interests extended beyond the realm of science.I was a firm believer in the importance of social justice,peace, and human rights. Throughout my life, I spoke out against racism, militarism, and oppression of any kind.
+                I have always believed that the pursuit of knowledge and understanding is a noble endeavor, and I hope that my work
+                continues to inspire future generations of scientists and thinkers."</p>
+        </div>
+    </section>
+    <section id="papers">
+        <h3>My Papers</h3>
+        <div class="grid-container">
+            <div>
+                <img src="assets/documents.png" class="paper-img"/>
+                <p><a href="http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1903_11_170-187.pdf" onclick="openLink(this.href);" class="center-text">A Theory of the Foundations of Thermodynamics</a></p>
+            </div>
+            <div>
+                <img src="assets/documents.png" class="paper-img"/>
+                <p><a href="https://myweb.rz.uni-augsburg.de/~eckern/adp/history/einstein-papers/1906_19_289-306.pdf" onclick="openLink(this.href);" class="center-text">A New Determination of Molecular Dimensionss</a></p>
+            </div>
+            <div>                 
+                <img src="assets/documents.png" class="paper-img"/>
+                <p><a href="http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1912_38_355-369.pdf" onclick="openLink(this.href);" class="center-text">The Speed of Light and the Statics of the Gravitational Field</a></p>
+            </div>
+            <div>  
+                <img src="assets/documents.png" class="paper-img"/>
+                <p><a href="http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1916_49_769-822.pdf" onclick="openLink(this.href);" class="center-text">The Foundation of the General Theory of Relativity</a></p>           
+            </div>
+        </div>
+    </section>
+    <section id="books">
+        <h3>My Books</h3>
+        <div class="grid-container">
+            <div>
+                <img src="https://m.media-amazon.com/images/I/41nlxblusOL._AC_UF1000,1000_QL80_.jpg" class="paper-img"/>
+                <p>Foundations of the General Theory of Relativity</p>
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/I/71WCeUz6ppL._AC_UF1000,1000_QL80_.jpg" class="paper-img"/>
+                <p>On the Method of Theoretical Physics</p>
+            </div>            
+            <div>  
+                <img src="https://m.media-amazon.com/images/I/414crkBGbtL._SY445_SX342_.jpg" class="paper-img"/>
+                <p>Origins of the General Theory of Relativity</p>           
+            </div>
+            <div>                 
+                <img src="https://m.media-amazon.com/images/I/71YVai86NcL._AC_UF1000,1000_QL80_.jpg" class="paper-img"/>
+                <p>Investigations of Brownian Motion</p>
+            </div>
+        </div>
+    </section>
+    <section id="collectionOfImages">
+        <h3>Images</h3>
+        <div class="grid-container">
+            <div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT6s3XMmQTfFefM37Wb1MzdTsmGLgqGBxxIFXWfUlNETljvyMe" alt="einstein image" class="collection-img"></div>
+            <div><img src="https://cdn.pixabay.com/photo/2012/10/26/00/19/albert-einstein-62931_1280.jpg" alt="einstein image" class="collection-img"/></div>
+            <div><img src="https://i.insider.com/560b23929dd7cc10008bdf91?width=600&format=jpeg&auto=webp" alt="einstein image" class="collection-img"/></div>
+            <div><img src="https://nationaltoday.com/wp-content/uploads/2022/04/Albert-Einstein-Birthday-1200x834.jpg" alt="einstein image" class="collection-img"/>            </div>
+         </div>
+    </section>
+    <section id="hobbies">
+        <h3>My Hobbies</h3>
+        <div class="grid-Hobbies">
+            <div>                
+                <p class="hobbies">Doing puzzles</p>
+                <img src="assets/puzzle.jpg" alt="Puzzle" class="hobbies-img"/>
+            </div>
+            <div>                
+                <p class="hobbies">Reading books about nature</p>
+                <img src="assets/reading-book.jpg" alt="Books" class="hobbies-img"/>
+            </div>
+            <div>                
+                <p class="hobbies">Playing violin</p>
+                <img src="assets/music.jpg" alt="Music" class="hobbies-img"/>
+            </div> 
+        </div>
+    </section>
+    <section id="blog">
+        <h3>My Blog</h3>
+        <div class="blog-editor">
+            <textarea id="blog-text" rows="20" cols="60" placeholder="Write your article..."></textarea><br/>
+            <button id="enter-button">Enter</button>
+        </div>
+    </section>    
+    <footer>
+        <section id="footer">            
+            <p><a href="https://en.wikipedia.org/wiki/Albert_Einstein"  class="center-text" onclick="openLink(this.href);" ><h3>Reference thru wikipedia </h3></a></p>
+        </section>
+    </footer> 
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+:root { 
+    --theme-font-color: #341bf2c5; 
+     --theme-background-color:#acc7f6;
+     --theme--alternative-color:rgb(168, 246, 246);
+     font-family:'Times New Roman', Times, serif;   
+     }
+     body{        
+         box-sizing: border-box;
+         margin-right: 1%; 
+         margin-left: 1%;
+         color: var(--theme-font-color);
+         text-align: center;
+     }
+     a{
+         text-decoration: none;
+     }
+     nav {
+         background-color: var(--theme-background-color);
+         grid-area: nav;
+         justify-content: space-between;
+         text-align: right;   
+         font-weight: bold;
+         padding: 5px;
+     }
+     nav a {
+         color: #341bf2c5; 
+         padding: 15px;
+     }
+     .navbar a:hover {
+         background-color: var(--theme--alternative-color);
+         border-radius: 3px;
+     }
+     main{
+         grid-area: main;
+         grid-template-columns: 1fr;
+ 
+     }
+     h3{
+         text-align: center;
+         color:var(--theme-font-color);
+         font-weight: bold;
+     }
+     #main,#papers,#collectionOfImages,#blog{
+         background-color: var(--theme--alternative-color);
+         margin-top: 1%;
+         margin-bottom: 1%;
+     }
+     #about,#books,#hobbies,#footer{
+         background-color: var(--theme-background-color);
+         margin-top: 1%;
+         margin-bottom: 1%;
+     }
+     section{
+        border-radius: 1%;
+        padding: 1%;
+    }
+     .grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-items: center;
+     align-items: center;    
+     max-width: fit-content;
+     margin: auto;
+     grid-gap: 1%;
+     } 
+     .grid-Hobbies {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-items: center;
+     align-items: center;    
+     max-width: fit-content;
+     margin: auto;
+     grid-gap: 1%;
+     } 
+     .profile-img{
+         width:250px;
+         height:250px;
+     }
+    .paper-img{
+     display: grid; 
+     width: 40%;
+     height: 40%;    
+     }
+     .collection-img{
+     display: grid; 
+     width: 60%;
+     height: 60%;    
+     }
+     .hobbies-img{
+     display: grid; 
+     width: 40%;
+     height: 40%; 
+     }
+     .blog-editor h4 {
+     display:grid;
+     border: 1px solid var(--theme-background);
+     background-color: var(--theme-background);
+     color: white;
+     padding: var(--main-padding);
+     margin: 0;  
+     }
+
+
+     @media only screen and (max-width: 500px){    
+        .projects-experience{
+            grid-template-columns: 1fr;
+        }
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.6fr .2fr ;
+            justify-content: space-evenly;    
+            grid-template-areas:
+            "nav"
+            "main"        
+            "about"
+            "papers"
+            "books"
+            "Images"
+            "blog"
+            "footer";
+            row-gap: 0.5rem ;
+        }
+        main {
+            display: grid;
+            justify-content: space-evenly;
+            height: 70vh;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .profile-img{
+            width:150px;
+        }
+    }
+ 
+  
