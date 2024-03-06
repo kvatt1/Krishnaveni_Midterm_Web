@@ -93,6 +93,7 @@
      }
      .blog-editor h4 {
      display:grid;
+     grid-area: auto;
      border: 1px solid var(--theme-background);
      background-color: var(--theme-background);
      color: white;
