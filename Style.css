@@ -102,7 +102,7 @@
      }
 
 
-     @media only screen and (max-width: 500px){    
+     @media only screen and (max-width: 700px){    
         .projects-experience{
             grid-template-columns: 1fr;
         }
